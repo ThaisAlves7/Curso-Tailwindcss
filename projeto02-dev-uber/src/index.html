@@ -2,6 +2,16 @@
 <html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
+
+    <!-- FONT AWESOME -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Projeto Uber</title>
 
@@ -46,5 +56,59 @@
         </div>
       </div>
     </header>
+
+    <!-- HERO -->
+    <main class="w-full bg-uber bg-no-repeat bg-cover bg-left sm:py-10">
+      <div class="w-full max-w-7xl mx-auto flex">
+        <section class="bg-white max-w-lg w-full md:mx-2 md:my-2">
+          <div class="bg-slate-100 flex w-full items-center justify-between">
+            <section
+              class="flex-1 pt-3 flex flex-col items-center justify-center gap-2"
+            >
+              <i class="fa fa-signal" style="font-size: 32px"> </i>
+              <span class="text-center font-medium">
+                Faça viagens ou entregas
+              </span>
+              <span class="w-full bg-black h-[1.5px]"> </span>
+            </section>
+
+            <section
+              class="flex-1 pt-3 flex flex-col items-center justify-center gap-2"
+            >
+              <i class="fa fa-car" style="font-size: 32px"> </i>
+              <span class="text-center font-medium"> Viajar </span>
+            </section>
+
+            <section
+              class="flex-1 pt-3 flex flex-col items-center justify-center gap-2"
+            >
+              <i class="fa fa-key" style="font-size: 32px"> </i>
+              <span class="text-center font-medium"> Alugue seus carros </span>
+            </section>
+          </div>
+
+          <div class="flex flex-col gap-5 px-4 my-4">
+            <h1 class="font-bold text-4xl max-w-sm">
+              Assuma o comando e ganhe
+            </h1>
+            <p class="max-w-sm">
+              Dirija na plataforma com a maior rede de usuários ativos
+            </p>
+
+            <button
+              class="bg-black self-start text-white px-6 py-2 rounded-lg font-medium hover:scale-105 duration-200"
+            >
+              Cadastre-se para dirigir
+            </button>
+
+            <a
+              href="#"
+              class="text-gray-700 mt-7 mb-4 border-b-2 self-start hover:border-gray-700 duration-200"
+              >Saiba mais sobre como dirigir e fazer entregas</a
+            >
+          </div>
+        </section>
+      </div>
+    </main>
   </body>
 </html>
