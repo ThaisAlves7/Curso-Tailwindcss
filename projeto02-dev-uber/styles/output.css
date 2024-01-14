@@ -602,6 +602,14 @@ video {
   max-width: 24rem;
 }
 
+.max-w-7 {
+  max-width: 1.75rem;
+}
+
+.max-w-2xl {
+  max-width: 42rem;
+}
+
 .flex-1 {
   flex: 1 1 0%;
 }
@@ -669,6 +677,10 @@ video {
   background-image: url('/src/assets/bguber.png');
 }
 
+.bg-city {
+  background-image: url('/src/assets/bg-city.png');
+}
+
 .bg-cover {
   background-size: cover;
 }
@@ -677,8 +689,16 @@ video {
   background-position: left;
 }
 
+.bg-right {
+  background-position: right;
+}
+
 .bg-no-repeat {
   background-repeat: no-repeat;
+}
+
+.p-6 {
+  padding: 1.5rem;
 }
 
 .px-2 {
@@ -711,6 +731,11 @@ video {
   padding-bottom: 0.5rem;
 }
 
+.py-8 {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
 .pt-3 {
   padding-top: 0.75rem;
 }
@@ -722,6 +747,16 @@ video {
 .text-4xl {
   font-size: 2.25rem;
   line-height: 2.5rem;
+}
+
+.text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+
+.text-sm {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
 }
 
 .font-bold {
@@ -791,5 +826,17 @@ video {
   .md\:my-2 {
     margin-top: 0.5rem;
     margin-bottom: 0.5rem;
+  }
+
+  .md\:text-base {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .lg\:text-4xl {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
   }
 }
