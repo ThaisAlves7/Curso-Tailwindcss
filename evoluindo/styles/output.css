@@ -556,6 +556,34 @@ h1 {
   height: 6.25rem;
 }
 
+.hidden {
+  display: none;
+}
+
+.w-96 {
+  width: 24rem;
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+.text-ellipsis {
+  text-overflow: ellipsis;
+}
+
+.whitespace-nowrap {
+  white-space: nowrap;
+}
+
+.whitespace-pre-wrap {
+  white-space: pre-wrap;
+}
+
+.border-2 {
+  border-width: 2px;
+}
+
 .text-xl {
   font-size: 1.25rem;
   line-height: 1.75rem;
@@ -563,4 +591,16 @@ h1 {
 
 .font-normal {
   font-weight: 400;
+}
+
+.leading-8 {
+  line-height: 2rem;
+}
+
+.leading-5 {
+  line-height: 1.25rem;
+}
+
+.leading-6 {
+  line-height: 1.5rem;
 }
