@@ -2,22 +2,19 @@
 <html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
-
-    <!-- FONT AWESOME -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- FONT GOOGLE [PRECONNECT] -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>DevHouse - Alugue ou Compre Casas</title>
+    <!-- FONT AWESOME -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <title>DevHouse - Alugue ou compre sua casa</title>
 
     <link rel="stylesheet" href="/styles/output.css" />
 
@@ -31,7 +28,7 @@
     <div class="flex w-full">
       <!-- SIDEBAR -->
       <aside
-        class="hidden sm:flex w-full flex-col max-w-[12.5rem] min-h-screen relative bg-white px-2 py-5"
+        class="border-r-2 hidden sm:flex w-full max-w-[12.5rem] min-h-screen relative bg-white flex-col px-2 py-5"
       >
         <div class="fixed">
           <div>
@@ -41,25 +38,25 @@
           <nav class="flex flex-col mt-8 w-full gap-5">
             <a
               href="#"
-              class="text-gray-500 font-medium hover:text-black hover:bg-gray-100 p-3 rounded-lg duration-300"
+              class="tet-gray-500 font-medium hover:text-black hover:bg-gray-100 p-3 rounded-lg duration-300"
             >
               Aluguel
             </a>
             <a
               href="#"
-              class="text-gray-500 font-medium hover:text-black hover:bg-gray-100 p-3 rounded-lg duration-300"
+              class="tet-gray-500 font-medium hover:text-black hover:bg-gray-100 p-3 rounded-lg duration-300"
             >
               Compra
             </a>
             <a
               href="#"
-              class="text-gray-500 font-medium hover:text-black hover:bg-gray-100 p-3 rounded-lg duration-300"
+              class="tet-gray-500 font-medium hover:text-black hover:bg-gray-100 p-3 rounded-lg duration-300"
             >
-              Serviço
+              Serviços
             </a>
             <a
               href="#"
-              class="text-gray-500 font-medium hover:text-black hover:bg-gray-100 p-3 rounded-lg duration-300"
+              class="tet-gray-500 font-medium hover:text-black hover:bg-gray-100 p-3 rounded-lg duration-300"
             >
               Contatos
             </a>
@@ -67,7 +64,7 @@
         </div>
 
         <button
-          class="w-11 h-11 rounded-full bg-gray-100 fixed z-30 bottom-5 left-4 hover:bg-gray-300 duration-300"
+          class="w-11 h-11 rounded-full bg-gray-100 fixed z-30 bottom-5 left-4 hover:bg-gray-300 duration-200"
         >
           <i class="fa fa-phone" style="font-size: 1rem"></i>
         </button>
@@ -77,42 +74,46 @@
         <!-- MENU MOBILE -->
         <div
           id="menu"
-          class="absolute z-50 w-full hidden flex-col items-center px-3 py-2 bg-white shadow-xl"
+          class="absolute z-50 w-full hidden flex-col items-center px-3 py-2 bg-white shadow-xl justify-center"
         >
-          <button class="text-3xl text-bold mt-4" onclick="closeMenu()">
+          <button
+            id="btn-close"
+            onclick="closeMenu()"
+            class="text-3xl text-bold mt-4"
+          >
             X
           </button>
           <nav class="flex flex-col mt-8 gap-5 w-full">
             <a
               href="#"
-              class="text-gray-500 font-medium hover:text-black hover:bg-gray-100 p-3 rounded-lg duration-300"
+              class="tet-gray-500 font-medium hover:text-black hover:bg-gray-100 p-3 rounded-lg duration-300"
             >
               Aluguel
             </a>
             <a
               href="#"
-              class="text-gray-500 font-medium hover:text-black hover:bg-gray-100 p-3 rounded-lg duration-300"
+              class="tet-gray-500 font-medium hover:text-black hover:bg-gray-100 p-3 rounded-lg duration-300"
             >
               Compra
             </a>
             <a
               href="#"
-              class="text-gray-500 font-medium hover:text-black hover:bg-gray-100 p-3 rounded-lg duration-300"
+              class="tet-gray-500 font-medium hover:text-black hover:bg-gray-100 p-3 rounded-lg duration-300"
             >
-              Serviço
+              Serviços
             </a>
             <a
               href="#"
-              class="text-gray-500 font-medium hover:text-black hover:bg-gray-100 p-3 rounded-lg duration-300"
+              class="tet-gray-500 font-medium hover:text-black hover:bg-gray-100 p-3 rounded-lg duration-300"
             >
               Contatos
             </a>
           </nav>
         </div>
 
-        <!-- HEADER -->
+        <!-- INICIO HEADER -->
         <header
-          class="bg-white w-full px-3 py-5 flex flex-row items-center justify-between"
+          class="bg-white w-full py-5 px-3 flex flex-row items-center justify-between"
         >
           <div
             class="flex items-center bg-slate-100 px-3 py-2 w-full max-w-xs lg:max-w-[50%] rounded-lg lg:mr-8"
@@ -120,8 +121,8 @@
             <i class="fa fa-search text-gray-500" style="font-size: 1rem"></i>
             <input
               type="text"
-              placeholder="Procurando aluguel ou compra?"
               class="w-full bg-slate-100 px-2 outline-none"
+              placeholder="Procurando apartamento?"
             />
           </div>
 
@@ -141,6 +142,7 @@
             </button>
 
             <button
+              id="btn-open"
               onclick="openMenu()"
               class="sm:hidden flex items-center justify-center px-4 py-2"
             >
@@ -148,6 +150,43 @@
             </button>
           </div>
         </header>
+
+        <!-- HOUSES -->
+        <section class="w-full px-3 lg:px-6">
+          <div class="flex w-full items-baseline justify-between">
+            <h1 class="font-bold text-3xl mt-4 mb-6">Compre ou alugue</h1>
+            <span class="hidden md:block text-gray-600"
+              >100 casas encontradas</span
+            >
+          </div>
+
+          <div class="grid grid-cols-1 gap-4">
+            <!--HOUSE-->
+            <a
+              href="#"
+              class="bg-white p-3 rounded-lg min-h-[25rem] relative flex flex-col hover:shadow-xl duration-300"
+            >
+              <div>
+                <div class="group overflow-hidden rounded-lg">
+                  <div class="absolute z-40 top-5 left-5">
+                    <div
+                      class="flex bg-slate-50/70 group-hover:bg-white duration-300 self-start items-center justify-center gap-3 px-3 py-1 rounded-full"
+                    >
+                      <i class="fa fa-map" style="font-size: 0.75rem"></i>
+                      <p class="font-medium text-sm">Campo Grande - MS</p>
+                    </div>
+                  </div>
+
+                  <img
+                    src="assets/1.jpg"
+                    alt="Casa"
+                    class="rounded-lg w-full h-64 object-cover group-hover:scale-110 duration-300"
+                  />
+                </div>
+              </div>
+            </a>
+          </div>
+        </section>
       </main>
     </div>
 
