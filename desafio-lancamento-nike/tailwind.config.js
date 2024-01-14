@@ -6,6 +6,9 @@ module.exports = {
       fontFamily: {
         sans: ["Poppins", "sans-serif"],
       },
+      backgroundImage: {
+        "fundo": "url('/src/assets/bg.png')",
+      },
     },
   },
   plugins: [],

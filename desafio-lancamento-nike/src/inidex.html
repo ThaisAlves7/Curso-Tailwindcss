@@ -18,13 +18,14 @@
       rel="stylesheet"
     />
   </head>
-  <body class="w-full h-full">
+  <body class="w-full h-full overflow-hidden">
     <div
       class="w-full h-screen bg-slate-300 flex items-center justify-center p-3"
     >
       <main
         class="bg-white h-[33.75rem] w-full max-w-4xl shadow-lg flex flex-col md:flex-row items-center justify-center"
       >
+        <!-- lEFT -->
         <div
           class="w-full md:w-1/2 h-full flex items-center justify-center flex-col"
         >
@@ -41,7 +42,7 @@
                 <p>Nike Air</p>
               </h1>
               <p class="mb-1">O tênis do futuro</p>
-              <p class="mb-7">O futuro a um passo do seu alcance</p>
+              <p class="mb-7">O futuro a um passo do seu alcance!</p>
               <a
                 href="#"
                 class="font-bold bg-zinc-800 text-white py-2 px-5 border-2 border-zinc-800 duration-300 hover:bg-white hover:text-zinc-800"
@@ -51,7 +52,16 @@
           </div>
         </div>
 
-        <div>RIGHT</div>
+        <!-- RIGHT -->
+        <div
+          class="w-full md:w-1/2 h-full flex items-center justify-center bg-fundo bg-cover bg-no-repeat bg-center"
+        >
+          <img
+            src="assets/tenis.png"
+            alt="Tênis Nike Air"
+            class="max-w-lg w-11/12 md:w-full object-cover z-30 duration-300 hover:rotate-6 hover:scale-110 md:hover:scale-125"
+          />
+        </div>
       </main>
     </div>
   </body>
